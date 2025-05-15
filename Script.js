@@ -6,7 +6,8 @@ const cors=require("cors")
 const mongoose=require("mongoose")
 app.use(body_parser.json())
 app.use(body_parser.urlencoded({extended:false}))
-mongoose.connect("mongodb://localhost:27017/nexus")
+mongoose.connect("mongodb+srv://nhoor271:Laqg7eGiRmsfXUey@nexus.slxyal3.mongodb.net/nexus?retryWrites=true&w=majority"
+)
 app.use(express.json())
 app.use(cors())
 const userSchema= new mongoose.Schema({
